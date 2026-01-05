@@ -1,18 +1,24 @@
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import Link from 'next/link'
-import { 
-  Search, 
-  Target, 
-  Zap, 
-  BarChart3, 
-  Shield, 
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
+import {
+  Search,
+  Target,
+  Zap,
+  BarChart3,
+  Shield,
   Clock,
   CheckCircle,
   ArrowRight,
-  Star
-} from 'lucide-react'
+  Star,
+} from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -27,9 +33,21 @@ export default function LandingPage() {
             <span className="text-xl font-bold text-gray-900">LeadScout</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-gray-600 hover:text-gray-900">Features</Link>
-            <Link href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link>
-            <Link href="/auth/signin" className="text-gray-600 hover:text-gray-900">Sign In</Link>
+            <Link
+              href="#features"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              Features
+            </Link>
+            <Link href="#pricing" className="text-gray-600 hover:text-gray-900">
+              Pricing
+            </Link>
+            <Link
+              href="/auth/signin"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              Sign In
+            </Link>
             <Button asChild>
               <Link href="/auth/signup">Start Free Trial</Link>
             </Button>
@@ -45,10 +63,13 @@ export default function LandingPage() {
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Find Your Next Customer
-            <span className="gradient-text block">Before Your Competitors Do</span>
+            <span className="gradient-text block">
+              Before Your Competitors Do
+            </span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Monitor Reddit and Twitter for buying intent signals. Get AI-scored leads delivered to your inbox in real-time.
+            Monitor Reddit and Twitter for buying intent signals. Get AI-scored
+            leads delivered to your inbox in real-time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="text-lg px-8 py-6">
@@ -57,10 +78,13 @@ export default function LandingPage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-lg px-8 py-6">
-              <Link href="#demo">
-                Watch Demo
-              </Link>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="text-lg px-8 py-6"
+            >
+              <Link href="#demo">Watch Demo</Link>
             </Button>
           </div>
           <p className="text-sm text-gray-500 mt-4">
@@ -82,19 +106,25 @@ export default function LandingPage() {
                   <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600">Manually searching social media for leads is time-consuming</p>
+                  <p className="text-gray-600">
+                    Manually searching social media for leads is time-consuming
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600">You miss conversations happening right now</p>
+                  <p className="text-gray-600">
+                    You miss conversations happening right now
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
                     <span className="text-red-600 text-sm">✗</span>
                   </div>
-                  <p className="text-gray-600">Hard to identify genuine buying intent from noise</p>
+                  <p className="text-gray-600">
+                    Hard to identify genuine buying intent from noise
+                  </p>
                 </div>
               </div>
             </div>
@@ -105,15 +135,21 @@ export default function LandingPage() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-600 mt-1" />
-                  <p className="text-gray-600">AI monitors Reddit & Twitter 24/7 for your keywords</p>
+                  <p className="text-gray-600">
+                    AI monitors Reddit & Twitter 24/7 for your keywords
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-600 mt-1" />
-                  <p className="text-gray-600">Smart scoring identifies high-intent prospects (6+ score)</p>
+                  <p className="text-gray-600">
+                    Smart scoring identifies high-intent prospects (6+ score)
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-600 mt-1" />
-                  <p className="text-gray-600">Instant notifications for hot leads (8+ score)</p>
+                  <p className="text-gray-600">
+                    Instant notifications for hot leads (8+ score)
+                  </p>
                 </div>
               </div>
             </div>
@@ -132,7 +168,7 @@ export default function LandingPage() {
               Powerful features designed for modern B2B sales teams
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
@@ -141,7 +177,8 @@ export default function LandingPage() {
                 </div>
                 <CardTitle>Smart Monitoring</CardTitle>
                 <CardDescription>
-                  Track unlimited keywords across Reddit and Twitter with real-time updates
+                  Track unlimited keywords across Reddit and Twitter with
+                  real-time updates
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -153,7 +190,8 @@ export default function LandingPage() {
                 </div>
                 <CardTitle>AI Lead Scoring</CardTitle>
                 <CardDescription>
-                  GPT-4 powered scoring rates buying intent from 1-10 with detailed reasoning
+                  GPT-4 powered scoring rates buying intent from 1-10 with
+                  detailed reasoning
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -165,7 +203,8 @@ export default function LandingPage() {
                 </div>
                 <CardTitle>Instant Alerts</CardTitle>
                 <CardDescription>
-                  Get notified immediately when high-value leads (8+ score) are detected
+                  Get notified immediately when high-value leads (8+ score) are
+                  detected
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -177,7 +216,8 @@ export default function LandingPage() {
                 </div>
                 <CardTitle>Analytics Dashboard</CardTitle>
                 <CardDescription>
-                  Track performance with detailed analytics and conversion metrics
+                  Track performance with detailed analytics and conversion
+                  metrics
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -226,8 +266,15 @@ export default function LandingPage() {
             <Card className="border-2 border-gray-200">
               <CardHeader>
                 <CardTitle>Starter</CardTitle>
-                <div className="text-3xl font-bold">$49<span className="text-lg font-normal text-gray-600">/month</span></div>
-                <CardDescription>Perfect for small teams getting started</CardDescription>
+                <div className="text-3xl font-bold">
+                  $49
+                  <span className="text-lg font-normal text-gray-600">
+                    /month
+                  </span>
+                </div>
+                <CardDescription>
+                  Perfect for small teams getting started
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
@@ -265,7 +312,12 @@ export default function LandingPage() {
               </div>
               <CardHeader>
                 <CardTitle>Pro</CardTitle>
-                <div className="text-3xl font-bold">$149<span className="text-lg font-normal text-gray-600">/month</span></div>
+                <div className="text-3xl font-bold">
+                  $149
+                  <span className="text-lg font-normal text-gray-600">
+                    /month
+                  </span>
+                </div>
                 <CardDescription>Best for growing sales teams</CardDescription>
               </CardHeader>
               <CardContent>
@@ -305,8 +357,15 @@ export default function LandingPage() {
             <Card className="border-2 border-gray-200">
               <CardHeader>
                 <CardTitle>Enterprise</CardTitle>
-                <div className="text-3xl font-bold">$299<span className="text-lg font-normal text-gray-600">/month</span></div>
-                <CardDescription>For large teams and enterprises</CardDescription>
+                <div className="text-3xl font-bold">
+                  $299
+                  <span className="text-lg font-normal text-gray-600">
+                    /month
+                  </span>
+                </div>
+                <CardDescription>
+                  For large teams and enterprises
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
@@ -336,7 +395,9 @@ export default function LandingPage() {
                   </li>
                 </ul>
                 <Button className="w-full" variant="outline" asChild>
-                  <Link href="/auth/signup?plan=enterprise">Start Free Trial</Link>
+                  <Link href="/auth/signup?plan=enterprise">
+                    Start Free Trial
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -351,9 +412,15 @@ export default function LandingPage() {
             Ready to Find Your Next Customer?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join hundreds of sales teams already using LeadScout to capture more leads
+            Join hundreds of sales teams already using LeadScout to capture more
+            leads
           </p>
-          <Button size="lg" variant="secondary" asChild className="text-lg px-8 py-6">
+          <Button
+            size="lg"
+            variant="secondary"
+            asChild
+            className="text-lg px-8 py-6"
+          >
             <Link href="/auth/signup">
               Start Your Free Trial Today
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -383,25 +450,61 @@ export default function LandingPage() {
             <div>
               <h4 className="font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="#features" className="hover:text-white">Features</Link></li>
-                <li><Link href="#pricing" className="hover:text-white">Pricing</Link></li>
-                <li><Link href="/demo" className="hover:text-white">Demo</Link></li>
+                <li>
+                  <Link href="#features" className="hover:text-white">
+                    Features
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#pricing" className="hover:text-white">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/demo" className="hover:text-white">
+                    Demo
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-white">About</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
+                <li>
+                  <Link href="/about" className="hover:text-white">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-white">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-white">
+                    Privacy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/help" className="hover:text-white">Help Center</Link></li>
-                <li><Link href="/docs" className="hover:text-white">Documentation</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact Support</Link></li>
+                <li>
+                  <Link href="/help" className="hover:text-white">
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/docs" className="hover:text-white">
+                    Documentation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-white">
+                    Contact Support
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -411,5 +514,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
